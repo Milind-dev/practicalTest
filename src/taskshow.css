@@ -1,3 +1,25 @@
+.taskshowcontainer{
+    width: 71vh;
+    border: 2px solid tomato;
+    border-radius:1vh;
+    margin: 35vh;
+    padding: 11vh; 
+}
 .taskshowimg{
     width: 132px;
+}
+
+.taskshowcontent{
+    border: 1px solid dodgerblue;
+    border-radius: 1vh;
+    padding: 9vh;
+}
+.taskshowcontent > div > video {
+    width: 44vh;
+    height: 33vh;
+    padding: 2vh;
+}
+
+.taskshowcontainer > div > audio{
+    padding-bottom: 2vh
 }
