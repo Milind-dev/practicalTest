@@ -40,8 +40,8 @@ export default function Newtask() {
     console.log("vid", URL.createObjectURL(e.target.files[0]));
   }
 
-  function handlesubmit(e) {
-    e.preventDefault();
+  function handlesubmit() {
+    // e.preventDefault();
     var items = JSON.parse(localStorage.getItem("item") || "[]");
     var taskitem = {
       id: uuidv4(),
@@ -53,7 +53,6 @@ export default function Newtask() {
     };
     items.push(taskitem);
     localStorage.setItem("item", JSON.stringify(items));
-    window.location.href = '/pagination'
   }
 
   return (
@@ -86,6 +85,42 @@ export default function Newtask() {
         {/* <input type="file"  src={setFilevid} onChange={handleChangeVid} /> */}
         <button>click</button>
       </form>
+    </div>
+  );
+}
+
+
+
+
+import "../taskshow.css";
+
+export default function Taskshow() {
+  var gettashshow = JSON.parse(localStorage.getItem("item")) || [];
+
+  // var audio = "http://streaming.tdiradio.com:8000/house.mp3";
+  return (
+    <div className="taskshowcontainer">
+      {gettashshow.map((item, index) => {
+        return (
+          <>
+            <div className="taskshowcontent">
+              <div key={index}>
+                <p>{item.id}</p>
+                <img className="taskshowimg" src={item.fileimg}></img>
+                <p>{item.newtxtarea}</p>
+                <audio controls={true}>
+                  <source type="audio/mp3" src={item.fileaudio}></source>
+                </audio>
+
+                <video controls={true}>
+                  <source type="video/mp4" src={item.filevid} />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </>
+        );
+      })}
     </div>
   );
 }

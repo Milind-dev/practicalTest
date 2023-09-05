@@ -23,3 +23,10 @@
 .taskshowcontainer > div > audio{
     padding-bottom: 2vh
 }
+
+.taskshowcontainer > div > video{
+    display: visible;
+    padding-bottom: 2vh;
+    background-color: darkblue;
+}
+

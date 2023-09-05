@@ -1,17 +1,29 @@
 
 import "../taskshow.css";
+import List from "./List";
 
-export default function Taskshow() {
+export default function Taskshows() {
   var gettashshow = JSON.parse(localStorage.getItem("item")) || [];
 
-  // var audio = "http://streaming.tdiradio.com:8000/house.mp3";
   return (
     <div className="taskshowcontainer">
       {gettashshow.map((item, index) => {
+            const {id,inputdata,newtxtarea,fileimg} = item; 
+            // console.log(fileimg)
         return (
           <>
-            <div className="taskshowcontent">
+            <List listindex={id} title={inputdata} contents = {newtxtarea} fileimg = {fileimg} />
+          </>
+        );
+      })}
+    </div>
+  );
+}
+
+
+{/* <div className="taskshowcontent">
               <div key={index}>
+                <p>{index}</p>
                 <p>{item.id}</p>
                 <p>{item.inputdata}</p>
                 <img className="taskshowimg" src={item.fileimg}></img>
@@ -25,10 +37,4 @@ export default function Taskshow() {
                   Your browser does not support the video tag.
                 </video>
               </div>
-            </div>
-          </>
-        );
-      })}
-    </div>
-  );
-}
+            </div> */}
