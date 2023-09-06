@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../css/newtask.css";
 import { v4 as uuidv4 } from "uuid";
+
 export default function Newtask() {
   const [inputdatas, setInputdata] = useState("");
   const [newtxtarea, setNewtxtarea] = useState("");
-
   const [fileimg, setFileimg] = useState();
   const [fileaudio, setFileaudio] = useState();
   const [filevid, setFilevid] = useState();
@@ -15,16 +15,15 @@ export default function Newtask() {
   }
 
   function handleChangeaudio(e) {
-    console.log(e.target.files);
     setFileaudio(URL.createObjectURL(e.target.files[0]));
     console.log("audio", URL.createObjectURL(e.target.files[0]));
   }
 
-  function handleChangevid(e) {
-    console.log(e.target.files);
-    setFilevid(URL.createObjectURL(e.target.files[0]));
-    console.log("vid", URL.createObjectURL(e.target.files[0]));
-  }
+  // function handleChangevid(e) {
+  //   console.log(e.target.files);
+  //   setFilevid(URL.createObjectURL(e.target.files[0]));
+  //   console.log("vid", URL.createObjectURL(e.target.files[0]));
+  // }
 
   function handleChangevid(e) {
     setFilevid(URL.createObjectURL(e.target.files[0]));
@@ -68,10 +67,11 @@ export default function Newtask() {
         />
         <img className="imgnewtask" src={fileimg} />
 
-        <input type="file" src={fileaudio} onChange={handleChangeaudio} />
+        <input type="file"  onChange={handleChangeaudio} />
         <audio className="imgnewtask" src={fileaudio} />
 
-        <input type="file" src={filevid} onChange={handleChangevid} />
+        {/* src={filevid} */}
+        <input type="file"  onChange={handleChangevid} />  
         <video className="imgnewtask" src={filevid} />
       </form>
     </div>

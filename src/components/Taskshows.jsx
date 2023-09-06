@@ -3,7 +3,6 @@ import List from "./List";
 
 export default function Taskshows() {
   var gettashshow = JSON.parse(localStorage.getItem("item")) || [];
-
   const newtask = (e) => {
     e.preventDefault();
     window.location.href = "http://localhost:3000/";
