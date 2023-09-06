@@ -1,10 +1,7 @@
-
-import "../taskshow.css";
+import "../css/taskshow.css";
 
 export default function Taskshow() {
   var gettashshow = JSON.parse(localStorage.getItem("item")) || [];
-
-  // var audio = "http://streaming.tdiradio.com:8000/house.mp3";
   return (
     <div className="taskshowcontainer">
       {gettashshow.map((item, index) => {

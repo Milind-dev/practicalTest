@@ -1,0 +1,97 @@
+.listingcontainer{
+    background-color: white;
+    color: black;
+    /* border: 1px solid black; */
+    box-shadow: 2vh;
+    /* padding: 3vh;     */
+    overflow: hidden;
+    border-radius: 2vh;
+    padding: 5vh;
+    box-shadow: 1vh 2vh 2vh 2vh;
+}
+.listingcontainer > a{
+    color: black;
+    padding: 3vh;    
+    overflow: hidden;
+    padding: 2vh;
+    font-size: medium;
+    font-weight: bold;
+    list-style: none;
+}
+
+.listingcontainer > p{
+    width: 232vh;
+    /* overflow: hidden; */
+    font-size: small;
+    /* font-weight: bold; */
+    list-style: none;
+}
+
+
+
+
+@media (max-width: 320px) {
+    .listingcontainer{
+        width: 310px;
+        background-color: white;
+        color: black;
+        /* border: 1px solid black; */
+        box-shadow: 2vh;
+        /* padding: 3vh;     */
+        overflow: hidden;
+        border-radius: 2vh;
+        padding: 5vh;
+        box-shadow: 1vh 2vh 2vh 2vh;
+    }
+    .listingcontainer > a{
+        color: black;
+        padding: 3vh;    
+        overflow: hidden;
+        padding: 2vh;
+        font-size: medium;
+        font-weight: bold;
+        list-style: none;
+    }
+    
+    .listingcontainer > p{
+        width: 232vh;
+        /* overflow: hidden; */
+        font-size: small;
+        /* font-weight: bold; */
+        list-style: none;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .listingcontainer{
+        /* background-color: green; */
+        color: black;
+        /* border: 1px solid black; */
+        box-shadow: 2vh;
+        /* padding: 3vh;     */
+        overflow: hidden;
+        border-radius: 2vh;
+        padding: 5vh;
+        box-shadow: 1vh 2vh 2vh 2vh;
+    }
+    .listingcontainer > a{
+        color: black;
+        padding: 3vh;    
+        overflow: hidden;
+        padding: 2vh;
+        font-size: medium;
+        font-weight: bold;
+        list-style: none;
+    }
+    
+    .listingcontainer > p{
+        width: 232vh;
+        /* overflow: hidden; */
+        font-size: medium;
+        /* font-weight: bold; */
+        list-style: none;
+    }
+    
+}
+  

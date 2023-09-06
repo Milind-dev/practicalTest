@@ -1,0 +1,161 @@
+
+.taskshowcontainer{
+    width: 71vh;
+    /* border: 2px solid black; */
+    border-radius:1vh;
+    margin: 5vh 55vh;
+    padding: 11vh;
+    background-color: #F2F4F7;
+    box-shadow: 1vh 0vh 1vh; 
+}
+h1{
+    color: black;
+}
+
+.taskshowcontainer > button{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 0.4vh;
+    margin-left: 60vh;
+    padding: 1vh;
+    cursor: pointer;
+}
+.taskshowimg{
+    width: 352px;
+}
+
+.taskshowcontent{
+    border: 1px solid #FFFFFF;
+    border-radius: 1vh;
+    /* padding: 9vh; */
+}
+.taskshowcontent > div > video {
+    width: 44vh;
+    height: 33vh;
+    /* padding: 2vh; */
+}
+
+.taskshowcontainer > div > audio{
+    padding-bottom: 2vh
+}
+
+.taskshowcontainer > div > video{
+    display: visible;
+    padding-bottom: 2vh;
+    background-color: darkblue;
+}
+
+
+
+
+
+@media (max-width: 321) {
+    body {
+        background-color: white;
+    }
+    .taskshowcontainer{
+        width: 14vh;
+        border: 2px solid tomato;
+        border-radius:1vh;
+        margin: 35vh;
+        padding: 11vh; 
+    }
+
+
+    .taskshowcontainer > button{
+        /* position: relative; */
+        background-color: dodgerblue;
+        color: white;
+
+        /* top: 20vh; */
+    }
+
+    .taskshowimg{
+        width: 32px;
+        display: none;
+        margin-left: -12vh;
+    }
+    
+    
+    .taskshowcontent{
+        border: 1px solid dodgerblue;
+        border-radius: 1vh;
+        padding: 9vh;
+        display: none
+    }
+    .taskshowcontent > div > video {
+        width: 44vh;
+        height: 33vh;
+        padding: 2vh;
+        display: none
+    }
+    
+    .taskshowcontainer > div > audio{
+        padding-bottom: 2vh
+    }
+    
+    .taskshowcontainer > div > video{
+        display: visible;
+        padding-bottom: 2vh;
+        background-color: darkblue;
+        display: none;
+    }
+    
+}
+  
+
+@media (max-width: 322) and (max-width: 767px) {
+    body {
+        background-color: white;
+    }
+    .taskshowcontainer{
+        width:104vh; 
+        border: 2px solid tomato;
+        border-radius:1vh;
+        margin: 35vh;
+        padding: 11vh; 
+    }
+
+
+    .taskshowcontainer > button{
+        /* position: relative; */
+        background-color: dodgerblue;
+        color: white;
+
+        /* top: 20vh; */
+    }
+
+    .taskshowimg{
+        width: 12px;
+        display: none;
+
+    }
+    
+    
+    .taskshowcontent{
+        border: 1px solid dodgerblue;
+        border-radius: 1vh;
+        padding: 9vh;
+        display: none
+    }
+    .taskshowcontent > div > video {
+        width: 44vh;
+        height: 33vh;
+        padding: 2vh;
+        display: none
+    }
+    
+    .taskshowcontainer > div > audio{
+        padding-bottom: 2vh
+    }
+    
+    .taskshowcontainer > div > video{
+        display: visible;
+        padding-bottom: 2vh;
+        background-color: darkblue;
+        display: none;
+    }
+    
+}
+  
